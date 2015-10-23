@@ -1,3 +1,14 @@
+**Breaking change:** Now uses a `mask` prop to define the input mask instead of `pattern`, to avoid preventing use of the the HTML5 `pattern` attribute in conjunction with the input mask.
+
+Updated to [inputmask-core@2.1.1](https://github.com/insin/inputmask-core/blob/master/CHANGES.md#211--2015-09-11)
+
+Updates based on [inputmask-core@2.1.0](https://github.com/insin/inputmask-core/blob/master/CHANGES.md#210--2015-07-15):
+
+* Added `placeholderChar` prop to configure the placeholder character.
+* The mask's pattern is now changed if the `pattern` prop changes - the user's input so far is replayed with the new pattern (with mixed results - TBD).
+
+UMD build is now available via npm in `dist/`. [[muffinresearch][muffinresearch]]
+
 ## 2.0.0 / 2015-04-07
 
 Updated to [inputmask-core@2.0.0](https://github.com/insin/inputmask-core/blob/master/CHANGES.md#200--2015-04-03)
